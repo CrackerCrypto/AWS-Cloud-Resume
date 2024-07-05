@@ -8,5 +8,6 @@ const updateCounter = async () => {
     "https://ln2sa2gdyjj4j4wokc4xuotguy0hydbr.lambda-url.ap-south-1.on.aws/"
   );
   let data = await response.json();
-  counter.innerText = `${data}`;
+  console.log(data);
+  counter.innerHTML = `${data}`;
 };
