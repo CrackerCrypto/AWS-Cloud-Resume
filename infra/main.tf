@@ -21,7 +21,7 @@ resource "aws_dynamodb_table_item" "resume-counter-item" {
   item = <<ITEM
   {
     "id": {"S": "counter_id"},
-    "views": {"N": "0"}
+    "views": {"N": "71"}
   }
   ITEM
 }
@@ -107,7 +107,7 @@ resource "aws_lambda_function" "cloud_resume_lambda_function" {
   function_name = "cloud_resume_lambda_function"
   role = aws_iam_role.lambda_role.arn
   handler = "dynamo-counter.lambda_handler"
-  runtime = "python3.8"
+  runtime = "python3.12"
   depends_on = [ aws_iam_role_policy_attachment.attach_iam_policy_to_iam_role ]
 }
 
