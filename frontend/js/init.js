@@ -177,7 +177,9 @@ var typed = new Typed(".typing", {
   strings: [
     "an Avid Learner",
     "an Enthusiastic Fresher",
+    "a wanna be DevOps Engineer",
     "a wanna be Cloud Engineer",
+    "certified AWS Solutions Architect - Associate",
   ],
   typeSpeed: 100,
   backSpeed: 60,
