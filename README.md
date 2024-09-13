@@ -33,3 +33,5 @@ I have created a static website, hosted on an S3 bucket, with a visitor counter 
 
 - ### Lambda Function
   ![lambda](.github/lambda-function.png)
+
+Checking github creds
